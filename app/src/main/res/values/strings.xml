@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">pr14-v6</string>
+    <string name="delete">Удалить задачу</string>
+    <string name="write">Записать задачу</string>
+    <string name="edit">Изменить задачу</string>
+    <string name="title">Заголовок задачи</string>
+    <string name="description">Описание задачи</string>
+    <string name="registration">Регистрация</string>
+    <string name="username">Имя пользователя</string>
+    <string name="email">Адрес электронной почты</string>
+    <string name="password">Пароль</string>
+    <string name="settings">Настройки</string>
+    <string name="userprofile">Профиль пользователя</string>
+    <string name="datetime">Дата и время</string>
+    <string name="soundsettings">Настройки звука</string>
+    <string name="checkupdates">Проверить обновления</string>
+    <string name="buttongoto">">"</string>
+    <string name="calendar">Календарь</string>
+    <string name="jan">Январь</string>
+    <string name="list">Лист</string>
+    <string name="ararm">Будильник</string>
+</resources>

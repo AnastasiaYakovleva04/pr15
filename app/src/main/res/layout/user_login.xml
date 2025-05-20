@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGreen">
+
+
+    <LinearLayout>
+        <TextView
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/registration"
+            android:textColor="@color/grey"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/bgGreen"
+            android:src="@drawable/button_back"
+            />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="312dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="224dp">
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:background="@drawable/rectangle_rad5"
+            android:paddingLeft="10dp"
+            android:hint="@string/username"
+            android:textColorHint="@color/grey"></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="312dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:background="@drawable/rectangle_rad5"
+            android:paddingLeft="10dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/grey"></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="312dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:background="@drawable/rectangle_rad5"
+            android:paddingLeft="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/grey"></EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_save"
+            android:text="@string/registration"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:onClick="Reg">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </TableRow>
+
+</TableLayout>

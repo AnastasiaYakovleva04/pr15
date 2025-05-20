@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop = "10dp">
+        <TextView
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/calendar"
+            android:textColor="@color/grey"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:contentDescription="profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@color/bgGreen"
+            android:src="@drawable/ava" />
+    </LinearLayout>
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:accessibilityHeading="true"
+        android:minDate="01/01/2020"
+
+        />
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/panel">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="4"
+            android:layout_centerHorizontal="true">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:contentDescription="list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/list"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_column="0"
+                android:onClick="ToTaskList"/>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:contentDescription="alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/alarmbutton"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_column="1"/>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:contentDescription="calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/calendarbutton"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_column="2"/>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:contentDescription="settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/settingsbutton"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_column="3"
+                android:onClick="Settings"/>
+        </GridLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
